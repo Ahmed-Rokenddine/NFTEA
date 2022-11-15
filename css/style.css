@@ -307,7 +307,7 @@ border-radius: 18px;
 	line-height: 1.2;
 }
 .scene {
-	width: 1000px;
+	
 	display: flex;
 	justify-content: space-between;
 	perspective: 800px;
@@ -495,7 +495,7 @@ section.solid {
 
 .destination-content{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+	grid-template-columns: 50% 50%;
 	grid-gap: 2rem;
 	align-items: center;
 	margin-top: 5rem;
@@ -503,7 +503,7 @@ section.solid {
 .col-content, .blog-content{
 	position: relative;
 }
-.col-content img, .blog-content img{
+.col-content img , .blog-content img{
 	width: 100%;
 	height: 500px;
 	object-fit: cover;
@@ -520,10 +520,92 @@ section.solid {
   margin-bottom: 15px;
   border: 1px solid rgb(255, 255, 255);
   color: #fff;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: #fff;
 
 }
+.fa{
+	position: absolute;
+    top: 84%;
+    left: 4%;
+    height: 14%;
+    width: 100%;
+    background-image: url("/img/moon.jpg");
+    background-repeat: no-repeat;
+    background-size: 11%;
+}
+.fa1{
+	position: absolute;
+    top: 84%;
+    left: 4%;
+    height: 14%;
+    width: 100%;
+    background-image: url("/images/Icon\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 11%;
+}
+.fa2{
+	position: absolute;
+    top: 84%;
+    left: 4%;
+    height: 14%;
+    width: 100%;
+    background-image: url("/images/Icon\ 2.png");
+    background-repeat: no-repeat;
+    background-size: 11%;
+}
+.fa3{
+	position: absolute;
+    top: 84%;
+    left: 4%;
+    height: 14%;
+    width: 100%;
+    background-image: url("/images/Icon\ 3.png");
+    background-repeat: no-repeat;
+    background-size: 11%;
+}
+.fa4{
+	position: absolute;
+    top: 84%;
+    left: 4%;
+    height: 14%;
+    width: 100%;
+    background-image: url("/images/Icon\ 4.png");
+    background-repeat: no-repeat;
+    background-size: 11%;
+}
+.fa5{
+	position: absolute;
+    top: 84%;
+    left: 4%;
+    height: 14%;
+    width: 100%;
+    background-image: url("/images/Icon\ 5.png");
+    background-repeat: no-repeat;
+    background-size: 11%;
+}
+.fa6{
+	position: absolute;
+    top: 84%;
+    left: 4%;
+    height: 14%;
+    width: 100%;
+    background-image: url("/images/Icon\ 6.png");
+    background-repeat: no-repeat;
+    background-size: 11%;
+}
+.fa7{
+	position: absolute;
+    top: 84%;
+    left: 4%;
+    height: 14%;
+    width: 100%;
+    background-image: url("/images/Icon\ 7.png");
+    background-repeat: no-repeat;
+    background-size: 11%;
+}
+
 .icon{
 	position: absolute;
 	top: 83%;
@@ -535,8 +617,8 @@ section.solid {
 	font-size: 22px;
 	font-weight: 500;
 	color: var(--bg-color);
-	left: 254px;
-    bottom: 50px;
+	left: 70%;
+    bottom: 10%;
 	color: rgb(0, 0, 0);
 }
 
@@ -552,16 +634,17 @@ section.solid {
 	position: absolute;
 	font-size: 15px;
 	color: var(--bg-color);
-	left: 268px;
+	left: 71%;;
     bottom: 22px;
 	letter-spacing: 2px;
 	color: rgb(0, 0, 0);
 }
-.col-content img:hover{
+.col-content:hover{
 	filter: brightness(100%) hue-rotate(45deg);
 	transform: scale(1.04);
 	cursor: pointer;
 }
+
 .blog-content img:hover{
 	-webkit-filter: brightness(30%);
     -webkit-transition: all 1s ease;
