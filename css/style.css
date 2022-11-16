@@ -612,6 +612,26 @@ section.solid {
 	width: 10%;
 	height: 10px;
 }
+.fixed h2{
+	font-size: 4.7vmin;
+	color: #284631;
+}
+.grid{
+	display: grid;
+	grid-template-columns:44% 44%;
+	align-items: center;
+	justify-content: space-around;
+
+}
+.flight{
+	border-radius: 16px;
+}
+.texted{
+	text-align: center;
+	align-items: center;
+	font-size: 1.7vmin;
+}
+
 .col-content h5{
 	position: absolute;
 	font-size: 22px;
