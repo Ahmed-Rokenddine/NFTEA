@@ -56,6 +56,7 @@ header{
 	position:absolute;
 	top: 28%;
     left: 37.2%;
+	width: auto;
 	
 }
 .cover{
@@ -119,9 +120,10 @@ section{
 	display: table;
   }
   .scroll {
-	background-color: #ffe0f6;
+	background-color: #000000;
 	padding: 10px 70px;
-	color: #666666;
+	color: greenyellow;
+    text-align: center;
   }
   .one {
 	background-image: url("/img/cnc-bg.jpg")
