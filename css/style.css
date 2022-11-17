@@ -20,7 +20,19 @@ body{
 	background: var(--bg-color);
 	color: var(--text-color);
 }
-
+.toptexts2 {
+	animation: fadeEffect 3s; /* fading effect takes 3s */
+ }
+ 
+ 
+ @keyframes fadeEffect { /* from 0 to full opacity */
+	from {opacity: 0;}
+	to {opacity: 1;}
+ }
+.Green-texted{
+	font-size: 2vmax;
+	color: greenyellow;
+}
 header{
 	position: fixed;
 	top: 0;
@@ -39,6 +51,15 @@ header{
 	font-weight: 600;
 	letter-spacing: 1px;
 	color: var(--bg-color);
+}
+.abs{
+	position:absolute;
+	top: 28%;
+    left: 37.2%;
+	
+}
+.cover{
+	position: relative;
 }
 .navbar{
 	display: flex;
@@ -91,7 +112,7 @@ section{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	height: 1945px;
+	height: 1200px;
 	width: 100%;
 	color: #eeeeee;
 	text-align: center;
@@ -617,6 +638,7 @@ section.solid {
 	color: #284631;
 }
 .grid{
+	margin-top: 10%;
 	display: grid;
 	grid-template-columns:44% 44%;
 	align-items: center;
