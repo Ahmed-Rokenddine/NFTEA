@@ -66,58 +66,58 @@ $result = mysqli_query($db, "SELECT * FROM image");
 
   <style type="text/css">
 
-        #wrapper{
-
-            width: 50%;
-
-            margin: 20px auto;
-
-            border: 2px solid #dad7d7;
-
+body {
+        overflow: hidden;
+      }
+      
+      #svgCloud1 {
+        position: relative;
+        height: 200px;
+        width: 50%;
+        animation: move  4s linear ;
+        margin-left: 50vw;
+        transform: translateX(0%) ;
+        animation-fill-mode: forwards;
+      }
+      @keyframes move{
+        50% {
+          transform: translateX(50vw) ;
         }
-
-        form{
-
-            width: 50%;
-
-            margin: 20px auto;
-
-        }
-
-        form div{
-
-            margin-top: 5px;
-
-        }
-
-       
-
+        100% {
+          transform: translateX(100vw) ;
+  }
+      }
+      #svgCloud2 {
+        position: relative;
+        height: 0px;
+        width:50%;
+        animation:MOVE 4s linear;
+        transform: translateX(0%) ;
+        animation-fill-mode: forwards;
+      
+      }
+        @keyframes MOVE{
+        50% {
+          transform: translateX(-50vw) ;
+        } 
+        100% {
+          transform: translateX(-100vw) ;
+  }
+      }
+    
     </style>
 
 </head>
 
  <body>
-
-    <div id="wrapper">
-
-         <! specify the encoding type of the form using the 
-
-                enctype attribute >
-
-         <form method="POST" action="" enctype="multipart/form-data">
-
-                  <input type="file" name="choosefile" value="" />
-
-            <div>
-
-                <button type="submit" name="uploadfile"> UPLOAD </button>
-
-            </div>
-
-        </form>
-
-    </div>
-
+  <div id="svgCloud2" >
+    <img src="IDEAS/right door.jpg" alt="">
+  </div>
+  
+      <div id="svgCloud1" >
+        <img src="IDEAS/left door.jpg" alt="">
+      </div>
+    
 </body>
 
 </html>
