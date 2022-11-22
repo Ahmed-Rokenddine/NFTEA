@@ -100,7 +100,7 @@ header{
 	position:absolute;
 	top: 28%;
     left: 37.2%;
-	width: auto;
+	width: 20.6%;
 	
 }
 .cover{
@@ -199,15 +199,15 @@ section{
     text-align: center;
   }
   .one {
-	background-image: url("/NFTEA/img/cnc-bg.jpg")
+	background-image: url(../img/cnc-bg.jpg)
 
   }
   .two {
-	background-image: url("/NFTEA/img/cnc-bg-2.jpg")
+	background-image: url(../img/cnc-bg-2.jpg)
   }
   .clay{
 	height: 900px;
-	background: url(/images/mountain.jpg) no-repeat center center ; 
+	background: url(../images/mountain.jpg) no-repeat center center ; 
 }
 
 .gridcomplex{
@@ -220,7 +220,7 @@ section{
 	
 	grid-column-gap: 2%;
 	
-	background: url(/img/427410-neon-blue-red-light-graffiti-vivid-colors.jpg) no-repeat center center ; 
+	background: url(../img/427410-neon-blue-red-light-graffiti-vivid-colors.jpg) no-repeat center center ; 
 	background-size: cover;
 	
 }
@@ -263,6 +263,17 @@ section{
 	width: 100%;
 	height: 100vh;
 	background: url(../images/It-Starts-Here-Main.jpg);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+}
+.home3{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../images/bottom.png);
 	background-size: cover;
 	background-position: center;
 	display: grid;
@@ -323,14 +334,14 @@ header.sticky{
 
 #package{
 	
-	background: url(/img/Font\ 1.png) no-repeat center center ; 
+	background: url(../img/Font\ 1.png) no-repeat center center ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #destination{
-  background: url(/images/peakpx\ \(1\).jpg) no-repeat center center ; 
+  background: url(../images/peakpx\ \(1\).jpg) no-repeat center center ; 
   background-size: cover;    
 }
 .whiteshadow{
@@ -552,7 +563,7 @@ section.solid {
     left: 4%;
     height: 14%;
     width: 100%;
-    background-image: url("/img/moon.jpg");
+    background-image: url(../img/moon.jpg);
     background-repeat: no-repeat;
     background-size: 11%;
 }
@@ -562,7 +573,7 @@ section.solid {
     left: 4%;
     height: 14%;
     width: 100%;
-    background-image: url("/images/Icon\ 1.png");
+    background-image: url(../images/Icon\ 1.png);
     background-repeat: no-repeat;
     background-size: 11%;
 }
@@ -572,7 +583,7 @@ section.solid {
     left: 4%;
     height: 14%;
     width: 100%;
-    background-image: url("/images/Icon\ 2.png");
+    background-image: url(../images/Icon\ 2.png);
     background-repeat: no-repeat;
     background-size: 11%;
 }
@@ -582,7 +593,7 @@ section.solid {
     left: 4%;
     height: 14%;
     width: 100%;
-    background-image: url("/images/Icon\ 3.png");
+    background-image: url(../images/Icon\ 3.png);
     background-repeat: no-repeat;
     background-size: 11%;
 }
@@ -602,7 +613,7 @@ section.solid {
     left: 4%;
     height: 14%;
     width: 100%;
-    background-image: url("/images/Icon\ 5.png");
+    background-image: url(../images/Icon\ 5.png);
     background-repeat: no-repeat;
     background-size: 11%;
 }
@@ -612,7 +623,7 @@ section.solid {
     left: 4%;
     height: 14%;
     width: 100%;
-    background-image: url("/images/Icon\ 6.png");
+    background-image: url(../images/Icon\ 6.png);
     background-repeat: no-repeat;
     background-size: 11%;
 }
@@ -622,7 +633,7 @@ section.solid {
     left: 4%;
     height: 14%;
     width: 100%;
-    background-image: url("/images/Icon\ 7.png");
+    background-image: url(../images/Icon\ 7.png);
     background-repeat: no-repeat;
     background-size: 11%;
 }
@@ -638,7 +649,7 @@ section.solid {
 	color: #ffffff;
 }
 .grid{
-	margin-top: 10%;
+	margin-top: 4%;
 	display: grid;
 	grid-template-columns:44% 44%;
 	align-items: center;

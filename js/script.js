@@ -47,21 +47,21 @@ function showFunction8() {
 	}
 }
 function showFunction2() {
-	if (document.body.scrollTop > 3260 || document.documentElement.scrollTop > 3260) {
+	if (document.body.scrollTop > 2850 || document.documentElement.scrollTop > 2850) {
 		document.getElementById("cover").style.display = "none";
 	} else {
 		document.getElementById("cover").style.display = "block";
 	}
 }
 function showFunction3() {
-	if (document.body.scrollTop > 3020 || document.documentElement.scrollTop > 3020) {
+	if (document.body.scrollTop >  2700  || document.documentElement.scrollTop >  2700 ) {
 		document.getElementById("single").style.display = "block";
 	} else {
 		document.getElementById("single").style.display = "none";
 	}
 }
 function showFunction4() {
-	if (document.body.scrollTop > 3220 || document.documentElement.scrollTop > 3220) {
+	if (document.body.scrollTop > 2900 || document.documentElement.scrollTop > 2900) {
 		document.getElementById("single2").style.display = "block";
 	} else {
 		document.getElementById("single2").style.display = "none";
