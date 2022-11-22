@@ -9,6 +9,7 @@
 	list-style: none;
 	scroll-behavior: smooth;
 	
+	
 }
 :root{
 	--bg-color: #fff;
@@ -20,7 +21,7 @@
 	--p-font: 1.1rem;
 }
 body{
-	background: var(--bg-color);
+	background: black;
 	color: var(--text-color);
 	scroll-behavior: smooth;
 }
@@ -53,33 +54,42 @@ header{
 }
 .twoA{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 	height: 50%;
-	width: 90%;
+	width: 100%;
 	text-align: center;
 	color: white;
 }
 .twoAimg{
  display: flex;
  justify-content: center;
- height: 60%;
- width: 40%;
+ height: 50%;
+ width: 50%;
 }
 .twoB{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 	height: 50%;
-	width: 90%;
+	width: 100%;
 	text-align: center;
 	color: white;
 }
 .twoBimg{
  display: flex;
  justify-content: center;
- height: 60%;
- width: 40%;
+ height: 50%;
+ width: 50%;
+}
+.twoAtext{
+width: 40%;
+font-size:20px;
+}
+.twoAtext{
+width: 40%;
 }
 .border{
 	border-radius: 20px;
@@ -105,6 +115,13 @@ header{
 }
 .cover{
 	position: relative;
+}
+.cover2{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
 }
 .navbar{
 	width: 40vw;
@@ -197,6 +214,7 @@ section{
 	padding: 10px 70px;
 	color: greenyellow;
     text-align: center;
+
   }
   .one {
 	background-image: url(../img/cnc-bg.jpg)
@@ -394,12 +412,9 @@ border-radius: 18px;
 	transform: rotateY(0.5turn);
 }
 .package-content{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-	grid-gap: 2rem;
+	display: flex;
 	align-items: center;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	justify-content: space-around;
 }
 .smallm {
 	text-align: center;
@@ -441,19 +456,21 @@ section.solid {
     left: 15%;
   }
 .destination-content{
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-gap: 2rem;
+	display: flex;
+	justify-content: space-around;
 	align-items: center;
-	margin-top: 5rem;
+}
+.coll2{
+	display: flex;
+	flex-direction: column;
+	align-items:center ;
+	justify-content: center;
 }
 .destination-content2{
 	position: absolute;
 	top: 20%;
+	display: flex;
 	justify-content: space-around;
-	display: grid;
-	grid-template-columns: 30% 30% 30%;
-	grid-gap: 2rem;
 	align-items: center;
 	margin-top: 5rem;
 }
@@ -502,12 +519,19 @@ section.solid {
 }
 .destination-content4{
 	position: absolute;
-	top: 11%;
+	bottom: 5%;
 	margin-top: 5rem;
 }
 .col-content, .blog-content, .col-content2{
 	position: relative;
+	width: 70%;
+	padding-top: 20px;
+	
 }
+.CDC{
+	 padding-top: 90% ;
+}
+
 .abso{
 	color: #fff;
 	position: absolute;
@@ -720,6 +744,10 @@ section.solid {
 	background: var(--main-color);
 	margin-top: -16px;
 }
+#contact-one{
+	background: var(--main-color);
+	margin-top: -16px;
+}
 .main{
 	display: flex;
 	flex-wrap: wrap;
@@ -805,6 +833,33 @@ section.solid {
 	}
 }
 @media (max-width: 1040px){
+	.destination-content{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.scene {
+	flex-direction: column;
+	justify-content:center;
+	}
+	.scene .card {
+		width: 240px;
+		height: 350px;
+	}
+	.home-text h1{
+		font-size: 50px;
+		margin-bottom: 16px;
+	}
+	.home-text p{
+		font-size: 15px;
+		line-height: 38px;
+		margin-bottom: 35px;
+	}
+	.home-btn{
+		font-size: 12px;
+		padding: 12px 24px;
+		border-radius: 3px;
+	}
 	#menu-icon{
 		display: block;
 	}
@@ -820,7 +875,7 @@ section.solid {
 		right: -100%;
 		width: 270px;
 		height: 120vh;
-		background: #1067cc;
+		background: #010203;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -845,8 +900,60 @@ section.solid {
 		margin-bottom: 12px;
 	}
 }
+@media (max-width: 700px){
+#contact-one{
+
+		margin-top: 1200px;
+	}
+	
+	
+.col-content, .blog-content, .col-content2{
+		width: 70%;
+	}
+.destination-content2{
+			flex-direction: column;
+	}
+.Green-texted{
+		font-size: 15px;
+	}
+.texted{
+		font-size: 10px;
+	}
+.home-text h1{
+	font-size: 40px;
+	margin-bottom: 14px;
+}
+.home-text p{
+	font-size: 13px;
+	line-height: 30px;
+	margin-bottom: 25px;}
+}
 
 @media (max-width: 575px){
+	#contact-one{
+		margin-top: 1300px;
+	}
+	
+.col-content, .blog-content, .col-content2{
+		width: 80%;
+	}
+	.abso2{
+		left: 17%;
+		font-size: 15px;
+	}
+	.twoA{
+		flex-direction: column;
+	}
+	.twoB{
+		flex-direction: column;
+	}
+	
+	.Green-texted{
+		font-size: 12px;
+	}
+.texted{
+		font-size: 8px;
+	}
 	.list{
 		width: 100%;
 	}
@@ -865,4 +972,8 @@ section.solid {
 		height: 85vh;
 		transition: .2s;
 	}
+	.scroll {
+        font-size: 10px;
+		padding: 8px 30px;	
+	  }
 }
