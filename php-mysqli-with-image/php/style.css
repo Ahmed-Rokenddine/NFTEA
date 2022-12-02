@@ -2,7 +2,7 @@ body {
     color: #009e0d;
     background: #000;
     font-family: 'Roboto', sans-serif;
-    background-image: url("../images/mountain.jpg") ;
+    background-image: url("../img/mountain.jpg") ;
     background-position: center; /* Center the image */
      /* Resize the background image to cover the entire container */
     background-repeat:no-repeat
@@ -131,6 +131,7 @@ table.table td i {
       0 0 151px #0fa;
       text-transform: uppercase;
    font-family: "Vibur", sans-serif;
+   margin-top: 60px;
 }
 .pagination li.active a {
     background: #03A9F4;
@@ -222,13 +223,7 @@ table.table td i {
 .signup-form a:hover {
 	text-decoration: none;
 }
-.signup-form form a {
-	color: #5cb85c;
-	text-decoration: none;
-}	
-.signup-form form a:hover {
-	text-decoration: underline;
-}  
+
 .header{
     text-align: center;
     color: #fff;
@@ -243,6 +238,7 @@ table.table td i {
       0 0 151px #0fa;
       text-transform: uppercase;
    font-family: "Vibur", sans-serif;
+   margin-top: 60px;
 }
 .cancel{
 	margin-right:50px;
@@ -390,6 +386,7 @@ table.table td i {
       0 0 151px #0fa;
       text-transform: uppercase;
    font-family: "Vibur", sans-serif;
+   margin-top: 60px;
 }
 .form-control {
 	height: 40px;
@@ -467,13 +464,7 @@ table.table td i {
 .signup-form a:hover {
 	text-decoration: none;
 }
-.signup-form form a {
-	color: #5cb85c;
-	text-decoration: none;
-}	
-.signup-form form a:hover {
-	text-decoration: underline;
-}  
+
 .header{
     text-align: center;
     color: #fff;
@@ -488,6 +479,7 @@ table.table td i {
       0 0 151px #0fa;
       text-transform: uppercase;
    font-family: "Vibur", sans-serif;
+   margin-top: 60px;
 }
 .cancel{
 	margin-right:50px;
@@ -499,6 +491,7 @@ table.table td i {
 .col-sm-7{
     text-shadow: none;
     max-width: 66.333333%;
+    
 }
 .form-control {
 	height: 40px;
@@ -577,8 +570,11 @@ table.table td i {
 	text-decoration: none;
 }
 .signup-form form a {
-	color: #5cb85c;
+	color: #2f592f;
 	text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-left: 20px
 }	
 .signup-form form a:hover {
 	text-decoration: underline;
@@ -597,6 +593,7 @@ table.table td i {
       0 0 151px #0fa;
       text-transform: uppercase;
    font-family: "Vibur", sans-serif;
+   margin-top: 60px;
 }
 .cancel{
 	margin-right:50px;

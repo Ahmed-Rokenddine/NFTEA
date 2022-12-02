@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="NFT Website">
-    <title>NFT - ART FOR everyone</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>NFTEA - ART FOR everyone</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 	<link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -40,10 +40,10 @@
 			<a href="Profil.php" class="home-btn">Be an artiste</a>
 		</div>
 	</section>
-	<!--Package section--->
+	<!-- Rotating images Sectoion --->
 	<section class="package" id="package">
 		<div class="title">
-			<h2>Your<br>collections</h2>
+			<h2>Incoming<br>collections</h2>
 		</div>
         
 		<div class="package-content">
@@ -79,7 +79,7 @@
 		</div>
 	</section>
 
-	<!--destination section--->
+	<!--Gallery Section--->
 	
     <section class="destination" id="destination">
 		<div class="title">
@@ -99,7 +99,7 @@
 			</div>
 
 			<div class="col-content">
-				<img src="images/ZED.gif"alt="Collection image">
+				<img src="img/ZED.gif"alt="Collection image">
 				<div class="shadow"></div>
 				<div class="icon"><img1  src="img/icon test.png" alt="icon image"></div> 
 				<i class="fa1">
@@ -235,7 +235,7 @@
 	</section>
 
 	<!--link to js--->
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="Javascript/script.js"></script>
 
 </body>
 </html>

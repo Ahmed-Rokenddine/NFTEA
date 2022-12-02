@@ -8,8 +8,8 @@ include('./php/dbconnection.php');?>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="NFT Website">
-    <title>NFT - ART FOR everyone</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>NFTEA - ART FOR everyone</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 	<link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -40,130 +40,81 @@ include('./php/dbconnection.php');?>
 		
 	</section>
    
-<?php
-	
-	 
-	//servername
-$servername = "localhost";
-//username
-$username = "root";
-//empty password
-$password = "";
-//database is the database name
-$dbname = "phpcrud";
- 
-// Create connection by passing these connection parameters
-$conn = new mysqli($servername, $username, $password, $dbname);
- 
-//sql query to find the maximum salary
-	$sql = "SELECT MIN(Prix) FROM tblusers";
-	$sqlImage = "SELECT * FROM tblusers WHERE Prix = '$sql'";
-	$resultImg = mysqli_query($con, $sqlImage);
-
-	while($row = mysqli_fetch_row($resultImg)){
-		echo $row["nftname"];
-	}
-	
-	
-	
-
-
-			
-	
-	
-	 ?>
-	
-  
-   
-	
-    <div class="gridcomplex">
-        
-       
-        
+         
+    <div class="gridcomplex">   
         <div class="giffed textbloom">
 		<h4>Totale des Nft Ajouté sur la plateforme</h4>
-           <img class="cli"src="img/giphy.gif" alt="decoration image" width="100%" alt=""> 
-           <div class="textgiffed">
+        <img class="cli"src="img/giphy.gif" alt="decoration image" width="100%" alt=""> 
+        <div class="textgiffed">
 		   <?php
 
+             //sql query to find total NFT added
 
+              $sql = "SELECT * FROM tblusers";
 
-$sql = "SELECT * FROM tblusers";
+              $result = mysqli_query($con, $sql);
 
-$result = mysqli_query($con, $sql);
+              $num_rows = mysqli_num_rows($result);
 
-$num_rows = mysqli_num_rows($result);
+              printf("%d\n", $num_rows);
 
-printf("%d\n", $num_rows);
-
-?>
-		   </div>
+           ?>
+		</div>
 		   
         </div>
 		<div class=" textbloom">
 		<h4>Lister la NFT la plus cher</h4>
-        <?php
-	
-	echo "Pour un prix de :";
-	
-	$sql = "SELECT MAX(Prix) FROM tblusers";
-	$maxPrix = $con->query($sql);
+         <?php
 
-	while ($price = mysqli_fetch_array($maxPrix)) {
-		
-		
-		$reseve = $price['MAX(Prix)'];echo $price['MAX(Prix)'];
-		
-	}
-	$sqlImage = "SELECT * FROM tblusers WHERE Prix = '$reseve'";
-	
-	$result = $con->query($sqlImage);
-	
-	while ($row = mysqli_fetch_array($result)) {
-		echo "<br />";
-		echo "La NFT la plus chere est :- ";
-		echo $row['nftname']; 
-		echo "<br />";
-		echo "<br />";
-		echo '<img class="clipped" alt="most expensive NFT" src="./nftpics/'.$row['nftpic'].'" width="100%">';
-		
-		 
-	}
-	
-		
-		?>
+	       //sql query to find the maximum NFT Price
+
+	      echo "Pour un prix de :";
+	      echo "<br />";
+          $sql = "SELECT MAX(Prix) FROM tblusers";
+	      $maxPrix = $con->query($sql);
+	      while ($price = mysqli_fetch_array($maxPrix)) {
+		  $reseve = $price['MAX(Prix)'];echo $price['MAX(Prix)'];
+          }
+	      $sqlImage = "SELECT * FROM tblusers WHERE Prix = '$reseve'";
+	      $result = $con->query($sqlImage);
+	        while ($row = mysqli_fetch_array($result)) {
+	          echo " ETH";
+		      echo "<br />";
+		      echo "La NFT la plus chere est : ";
+		      echo "<br />";
+		      echo $row['nftname']; 
+		      echo "<br />";
+		      echo "<br />";
+		      echo '<img class="clipped" alt="most expensive NFT" src="./nftpics/'.$row['nftpic'].'" width="100%">';
+	         }
+
+		  ?>
 		</div>
 		<div class=" textbloom" >
 		<h4>Lister la NFT la Moins cher</h4>
 		<?php
 	
-	echo "Pour un prix de :";
-	
-	$sql = "SELECT  MIN(Prix) FROM tblusers";
-	$minPrix = $con->query($sql);
-
-	while ($price = mysqli_fetch_array($minPrix)) {
-		
-		
-		$reseve = $price['MIN(Prix)'];echo $price['MIN(Prix)'];
-		
-	}
-	$sqlImage = "SELECT * FROM tblusers WHERE Prix = '$reseve'";
-	
-	$result = $con->query($sqlImage);
-	
-	while ($row = mysqli_fetch_array($result)) {
-		echo "<br />";
-		echo "La NFT la moins chere est :- ";
-		echo $row['nftname']; 
-		echo "<br />";
-		echo "<br />";
-		echo '<img class="clipped" alt="cheepest NFT" src="./nftpics/'.$row['nftpic'].'" width="100%">';
-		
-		 
-	}
-	
-		
+	        //sql query to find the minimum NFT Price 
+			
+	        echo "Pour un prix de :";
+	        echo "<br />";
+	        $sql = "SELECT  MIN(Prix) FROM tblusers";
+	        $minPrix = $con->query($sql);
+	         while ($price = mysqli_fetch_array($minPrix)) {
+		      $reseve = $price['MIN(Prix)'];echo $price['MIN(Prix)'];
+	          }
+	        $sqlImage = "SELECT * FROM tblusers WHERE Prix = '$reseve'";
+	        $result = $con->query($sqlImage);
+	         while ($row = mysqli_fetch_array($result)) {
+	          echo " ETH";
+		      echo "<br />";
+		      echo "La NFT la moins chere est : ";
+		      echo "<br />";
+		      echo $row['nftname']; 
+		      echo "<br />";
+		      echo "<br />";
+		      echo '<img class="clipped" alt="cheepest NFT" src="./nftpics/'.$row['nftpic'].'" width="100%">';
+	        }
 		?>
 		</div>
     </div>
@@ -224,7 +175,7 @@ printf("%d\n", $num_rows);
 	</section>
 
 	<!--link to js--->
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="Javascript/script.js"></script>
 
 </body>
 </html>

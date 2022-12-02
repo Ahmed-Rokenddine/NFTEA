@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="NFT Website">
-    <title>NFT - ART FOR everyone</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>NFTEA - ART FOR everyone</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 	<link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -39,6 +39,7 @@
 
 	<div class="clay">
 
+	<!--PHP Pages Linking section--->
 		
 	<iframe src="php/main.php" height="900px" width="100%" title="Iframe Example"></iframe>
 
@@ -101,7 +102,7 @@
 	</section>
 
 	<!--link to js--->
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="Javascript/script.js"></script>
 
 </body>
 </html>

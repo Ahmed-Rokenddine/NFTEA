@@ -56,6 +56,7 @@ echo "<script>alert('Something Went Wrong. Please try again');</script>";
 </style>
 </head>
 <body>
+    <!--Home section--->
 <div class="header">
 <h1>Become an artiste !</h1>
 <p>Show us what you got</p>
@@ -74,12 +75,10 @@ echo "<script>alert('Something Went Wrong. Please try again');</script>";
             <input type="text" class="form-control" name="Prix" placeholder="Prix" required="true" maxlength="10" pattern="[0-9]+">
         </div>
         <div class="form-group">
-		
-
-        
 			<select name="collection" value="none" class="form-control"  required="true" >
 			<option value="">Select Collection</option>
                         <?php
+                        //Query to select a collection from the ones already existing 
                         $select=mysqli_query($con,"SELECT * FROM collection");
                         while($row=mysqli_fetch_array($select)){
                             ?>

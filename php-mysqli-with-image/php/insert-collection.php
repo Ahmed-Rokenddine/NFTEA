@@ -32,6 +32,7 @@ echo "<script>alert('Something Went Wrong. Please try again');</script>";
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <style>
+    
 	.col-sm-7 {
     text-shadow: none;
     max-width: 66.333333%;
@@ -39,6 +40,7 @@ echo "<script>alert('Something Went Wrong. Please try again');</script>";
 </style>
 </head>
 <body>
+    <!--Home section--->
 <div class="header">
 <h1>Become an artiste !</h1>
 <p>Show us what you got</p>
@@ -65,7 +67,7 @@ echo "<script>alert('Something Went Wrong. Please try again');</script>";
         </div>
     </form>
 	<div class="text-center">View Aready Inserted Data!!  <a href="main.php">View</a></div>
-	<div class="col-sm-7" align="right">
+	<div class="col-sm-7"align="right">
                         <a href="main.php" class="btn btn-secondary"> <span>Cancel</span></a>
                                         
     </div>    

@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="NFT Website">
-    <title>NFT - ART FOR everyone</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>NFTEA - ART FOR everyone</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 	<link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -27,6 +27,7 @@
 	<img class="flight" src="img/NFTEAR LOGO.gif "
 		 width="65" 
          height="auto" alt="Logo NFTEA">
+	
 		<div class="bx bx-menu" id="menu-icon"></div>
 		<ul class="navbar">
 			<li><a href="index.php">Home</a></li>
@@ -34,6 +35,7 @@
 			<li><a href="Profil.php">Profil</a></li>
 			<li><a href="Statistiques.php">Statistiques</a></li>
 		</ul>
+		
 		
 		
 	</header>
@@ -54,7 +56,7 @@
 			<div class="toptexts2" id="toptexts2">
 					<div class="grid">
 				
-						<p class="Green-texted">CNC Aluminum Chassis Powerful 99Wh battery, 8 hours of use4</h2>
+						<p class="Green-texted">Every moment is a fresh beginning.</h2>
 						<div ><h2>Create Anytime, Anywhere</h2>
 							<p class="texted"> that simple , inside every Art , everything there's an NFT 
 								you just need to find it !" that simple , inside every Art , everything there's an NFT 
@@ -94,7 +96,7 @@
 								 , you just need to find it !" that simple 
 								inside every Art , everything there's an NFT , you just need to find it !"</p>
 					   </div>
-					   <p class="Green-texted">CNC Aluminum Chassis Powerful 99Wh battery, 8 hours of use4</p>
+					   <p class="Green-texted">Every moment is a fresh beginning.</p>
 					
 					
 				    </div>	
@@ -105,7 +107,7 @@
 				<div class="toptexts2" id="toptexts4">
 					<div class="grid">
 				
-						<p class="Green-texted">CNC Aluminum Chassis Powerful 99Wh battery, 8 hours of use4</h2>
+						<p class="Green-texted">Every moment is a fresh beginning.</h2>
 						<div ><h2>Create Anytime, Anywhere</h2>
 							<p class="texted"> that simple , inside every Art , everything there's an NFT 
 								you just need to find it !" that simple , inside every Art , everything there's an NFT 
@@ -139,20 +141,21 @@
 		</div>
 		<div class="fixed two">
 			<div class="twoA">
-				<p>NFTea is not just a website its a community</p>
+				<p class="texted">NFTea is not just a website its a community</p>
 				<div class="twoAimg">
-					<img src="images/ezgif.com-gif-maker.gif" width="80%" alt="decoration image">
+					<img src="img/test1.gif" width="100%" alt="decoration image">
 				</div>
               
 			</div>
 			<div class="twoB">
 				<div class="twoBimg">
-					<img src="images/pewpew-relayx.b8011af5.gif" width="80%" alt="decoration image">
+					<img src="img/pewpew-relayx.b8011af5.gif" width="100%" alt="decoration image">
 				</div> 
-				<p>NFTea is not just a website its a community</p>
+				<p class="texted">NFTea is not just a website its a community</p>
 			</div>
 		</div>
 	  </div>
+	   <!--Screen turning on section--->
 	  <div class="cover">
 		<div class="abs" id="cover"> <img src="img/creativity-bg-screen-cover.png"  alt="decoration image"	width="90%" height="auto" > </div>
 		<img src="img/creativity-bg.jpg"  alt="decoration image"
@@ -167,7 +170,6 @@
 		</div>
 		
 	</div>
-	
 	<div class="cover" >
 		<div class="abso2">
 			<h2>How To Deal With NFT</h2>
@@ -175,13 +177,15 @@
 		</div>
 		<div class="destination-content4">
 			
-			<img class="border" src="IDEAS/Slice 1.png" alt="decoration image" width="100%" height="auto" alt="">
+			<img class="border" src="img/Slice 1.png" alt="decoration image" width="100%" height="auto" alt="">
 		</div>
 		<img class="margin-image" src="img/panel-wallpaper.jpg" alt="decoration image" alt=""
 		width="100%"
 		height="auto">
 		
 	</div>
+	<!--Sliding images section--->
+
 	<div class="cover">
 		<div class="abso">
 			<h2>NFT 101</h2>
@@ -189,7 +193,7 @@
 		</div>
 		<div class="destination-content2">
 			<div class="col-content2 abt1">
-				<img class="a" src="images/font dark blue.gif" alt="decoration image">
+				<img class="a" src="img/font dark blue.gif" alt="decoration image">
 				<div class="shadow"></div>
 				<div class="icon"><img1  src="img/icon test.png"></div> 
 				
@@ -203,7 +207,7 @@
 			</div>
 
 			<div class="col-content2 abt2">
-				<img src="images/what-is-nft.png" alt="decoration image">
+				<img src="img/what-is-nft.png" alt="decoration image">
 				<div class="shadow"></div>
 				<div class="icon"><img1  src="img/icon test.png"></div> 
 				
@@ -217,7 +221,7 @@
 			</div>
 
 			<div class="col-content2 collapsible abt3">
-				<img src="images/how-to-create-nft.png" alt="decoration image">
+				<img src="img/how-to-create-nft.png" alt="decoration image">
 				<div class="shadow"></div>
 				<div class="icon"><img1  src="img/icon test.png"></div> 
 				
@@ -235,7 +239,7 @@
 		height="auto">
 	</div>
 	
-		<img class="margin-image" src="images/last font.png" alt="decoration image" width="100%"  alt="">
+		<img class="margin-image" src="img/last font.png" alt="decoration image" width="100%"  alt="">
 
 		
 	
@@ -294,7 +298,7 @@
 	</section>
 
 	<!--link to js--->
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="Javascript/script-inder.js"></script>
 
 </body>
 </html>

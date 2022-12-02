@@ -40,6 +40,7 @@ if(isset($_POST['submit']))
 
 </head>
 <body>
+  <!--Home section--->
 <div class="header">
 <h1>Become an artiste !</h1>
 <p>Show us what you got</p>
@@ -47,6 +48,7 @@ if(isset($_POST['submit']))
 <div class="signup-form">
     <form  method="POST">
  <?php
+ //Query to get infos following the selected ID
 $eid=$_GET['editid'];
 $ret=mysqli_query($con,"select * from collection where ID='$eid'");
 while ($row=mysqli_fetch_array($ret)) {
@@ -77,7 +79,7 @@ while ($row=mysqli_fetch_array($ret)) {
     </form>
 
 </div>
-<div class="col-sm-7" align="right">
+<div class="col-sm-7"align="right">
                         <a href="main.php" class="btn btn-secondary"> <span>Cancel</span></a>
                                         
     </div> 

@@ -39,6 +39,7 @@ echo "<script>window.location.href = 'main.php'</script>";
 </head>
 <body>
 <div class="header">
+    <!--Home section--->
 <h1>Become an artiste !</h1>
 <p>Show us what you got</p>
 </div>
@@ -50,7 +51,7 @@ echo "<script>window.location.href = 'main.php'</script>";
                     <div class="col-sm-5">
                         <h2>Collection <b>Management</b></h2>
                     </div>
-                       <div class="col-sm-7" align="right">
+                       <div class="col-sm-7"align="right" >
                         
                         <a href="insert-collection.php" class="btn btn-secondary"><i class="material-icons">&#xE147;</i> <span>Add New Collection</span></a>
                                         
@@ -69,14 +70,15 @@ echo "<script>window.location.href = 'main.php'</script>";
                 </thead>
                 <tbody>
                      <?php
-$ret=mysqli_query($con,"select * from collection");
-$cnt=1;
-$row=mysqli_num_rows($ret);
-if($row>0){
-while ($row=mysqli_fetch_array($ret)) {
+                     //Query to get Collections infos from Collection table 
+                         $ret=mysqli_query($con,"select * from collection");
+                         $cnt=1;
+                         $row=mysqli_num_rows($ret);
+                         if($row>0){
+                         while ($row=mysqli_fetch_array($ret)) {
 
-?>
-<!--Fetch the Records -->
+                     ?>
+                      <!--Fetch the Records -->
                     <tr>
                         <td><?php echo $cnt;?></td>
                         <td> <?php  echo $row['collname'];?></td>
@@ -90,12 +92,12 @@ while ($row=mysqli_fetch_array($ret)) {
                         </td>
                     </tr>
                     <?php 
-$cnt=$cnt+1;
-} } else {?>
-<tr>
-    <th style="text-align:center; color:red;" colspan="6">No Collection Found</th>
-</tr>
-<?php } ?>       
+                   $cnt=$cnt+1;
+                    } } else {?>
+                      <tr>
+                      <th style="text-align:center; color:red;" colspan="6">No Collection Found</th>
+                      </tr>
+                       <?php } ?>       
 
           
                 
@@ -114,7 +116,7 @@ $cnt=$cnt+1;
                     <div class="col-sm-5">
                         <h2>NFT <b>Management</b></h2>
                     </div>
-                       <div class="col-sm-7" align="right">
+                       <div class="col-sm-7" align="right" >
                         <a href="insert.php" class="btn btn-secondary"><i class="material-icons">&#xE147;</i> <span>Add New NFT</span></a>
                         
                                         
@@ -135,20 +137,16 @@ $cnt=$cnt+1;
                 </thead>
                 <tbody>
                      <?php
-$ret=mysqli_query($con,"select * from tblusers");
-
-$cnt=1;
-$row=mysqli_num_rows($ret);
-
-if($row>0){
-while ($row=mysqli_fetch_array($ret)  ) {
-
-    $a=$row['Collection'];
-    $sqlyy=mysqli_query($con,"SELECT collname FROM `collection` WHERE ID = $a");
-   
-
-?>
-<!--Fetch the Records -->
+                     //Query to get NFT infos from NFT table 
+                      $ret=mysqli_query($con,"select * from tblusers");
+                      $cnt=1;
+                      $row=mysqli_num_rows($ret);
+                        if($row>0){
+                        while ($row=mysqli_fetch_array($ret)  ) {
+                           $a=$row['Collection'];
+                           $sqlyy=mysqli_query($con,"SELECT collname FROM `collection` WHERE ID = $a");
+                      ?>
+                    <!--Fetch the Records -->
                     <tr>
                         <td><?php echo $cnt;?></td>
                         <td><img src="../nftpics/<?php  echo $row['nftpic'];?>" width="80" height="80"></td>
@@ -164,13 +162,13 @@ while ($row=mysqli_fetch_array($ret)  ) {
                         </td>
                     </tr>
                     <?php 
-$cnt=$cnt+1;
-} } 
-else {?>
-<tr>
-    <th style="text-align:center; color:red;" colspan="6">No NFT     Found</th>
-</tr>
-<?php } ?>       
+                    $cnt=$cnt+1;
+                     } } 
+                     else {?>
+                       <tr>
+                       <th style="text-align:center; color:red;" colspan="6">No NFT     Found</th>
+                       </tr>
+                       <?php } ?>       
 
           
                 

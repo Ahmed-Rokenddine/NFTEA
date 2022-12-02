@@ -1,4 +1,5 @@
 <?php
+//Database Connection
 include('dbconnection.php');
 ?>
 <!DOCTYPE html>
@@ -15,19 +16,9 @@ include('dbconnection.php');
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
-<style>
-body {
-    color: #566787;
-    background: #f5f5f5;
-    font-family: 'Roboto', sans-serif;
-    background-image: url("../images/mountain.jpg");
-    background-position: center; /* Center the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-</style>
 </head>
 <body>
+    <!--Home section--->
 <div class="header">
 <h1>Become an artiste !</h1>
 <p>Show us what you got</p>
@@ -39,22 +30,25 @@ body {
                 <div class="row">
                     <div class="col-sm-5">
                         <h2>Gallery <b>Details</b></h2>
+                        <!--Fetch the Records From all tables and display them -->
                     </div>
 <?php
 $vid=$_GET['viewid'];
 $ret=mysqli_query($con,"select * from tblusers where ID =$vid");
 $cnt=1;
 while ($row=mysqli_fetch_array($ret)) {
+    $a=$row['Collection'];
+    $sqlyy=mysqli_query($con,"SELECT collname FROM `collection` WHERE ID = $a");
 
 ?>
 
-                     <div class="col-sm-7" align="right">
+                     <div class="col-sm-7" >
                         <a href="edit.php?editid=<?php echo htmlentities ($row['ID']);?>" class="btn btn-primary"><span>Edit Gallery Details</span></a>
                                         
                     </div>
                 </div>
             </div>
-<table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+<table cellpadding="0" cellspacing="0"  class="display table table-bordered" id="hidden-table-info">
                
 <tbody>
     <tr>
@@ -71,8 +65,9 @@ while ($row=mysqli_fetch_array($ret)) {
   </tr>
   <tr>
     <th>Collection</th>
-    <td><?php  echo $row['Collection'];?></td>
-    <th>Price</th>
+    <?php  $ro=mysqli_fetch_array($sqlyy)?>
+    <td><?php  echo $ro['collname'];?></td>  
+    <th>Price 'ETH'</th>
     <td><?php  echo $row['Prix'];?></td>
   </tr>
   <tr>
@@ -90,7 +85,7 @@ $cnt=$cnt+1;
         </div>
     </div>
 </div>  
-<div class="col-sm-7" align="right">
+<div class="col-sm-7" >
                         <a href="main.php" class="btn btn-secondary"> <span>Cancel</span></a>
                                         
     </div>    

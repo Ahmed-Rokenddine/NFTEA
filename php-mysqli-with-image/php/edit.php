@@ -8,11 +8,11 @@ if(isset($_POST['submit']))
     
     $nftname=$_POST['nftname'];
     $Prix=$_POST['Prix'];
-    $Collection=$_POST['Collection'];
+    $Collection=$_POST['collection'];
     $add=$_POST['Description'];
 
     //Query for data updation
-     $query=mysqli_query($con, "update  tblusers set nftname='$nftname', Prix='$Prix', Collection='$Collection', Description='$add' where ID='$eid'");
+     $query=mysqli_query($con, "update  tblusers set nftname='$nftname', Prix='$Prix', collection='$Collection', Description='$add' where ID='$eid'");
      
     if ($query) {
     echo "<script>alert('You have successfully update the data');</script>";
@@ -42,6 +42,7 @@ if(isset($_POST['submit']))
 
 </head>
 <body>
+    <!--Home section--->
 <div class="header">
 <h1>Become an artiste !</h1>
 <p>Show us what you got</p>
@@ -49,6 +50,7 @@ if(isset($_POST['submit']))
 <div class="signup-form">
     <form  method="POST">
  <?php
+ //Query to get infos following the selected ID
 $eid=$_GET['editid'];
 $ret=mysqli_query($con,"select * from tblusers where ID='$eid'");
 while ($row=mysqli_fetch_array($ret)) {
@@ -71,12 +73,29 @@ while ($row=mysqli_fetch_array($ret)) {
             <input type="text" class="form-control" name="Prix" value="<?php  echo $row['Prix'];?>" required="true" maxlength="10" pattern="[0-9]+">
         </div>
         <div class="form-group">
-        	<input type="Collection" class="form-control" name="Collection" value="<?php  echo $row['Collection'];?>" required="true">
+            <textarea class="form-control" name="Description" required="true"><?php  echo $row['Description'];?></textarea>
+        </div> 
+        <div class="form-group">
+
+        <select name="collection"  class="form-control"  required="true" >
+        
+                        <?php
+                        //Query to select one of the already existing Collections
+                        $select=mysqli_query($con,"SELECT * FROM collection");
+                        while($row=mysqli_fetch_array($select)){
+                            ?>
+                            <option value="<?php echo $row['ID']; ?>"> <?php echo $row['collname']?></option>
+                            <?php
+                        }
+                            ?> 
+        </select>
+
+
+
+        	
         </div>
 		
-		<div class="form-group">
-            <textarea class="form-control" name="Description" required="true"><?php  echo $row['Description'];?></textarea>
-        </div>   
+		  
 
 <?php 
 }?>
@@ -86,7 +105,7 @@ while ($row=mysqli_fetch_array($ret)) {
     </form>
 
 </div>
-<div class="col-sm-7" align="right">
+<div class="col-sm-7" align="right" >
                         <a href="main.php" class="btn btn-secondary"> <span>Cancel</span></a>
                                         
     </div> 
